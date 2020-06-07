@@ -1,0 +1,10 @@
+C:\Users\z125760760\Desktop\CMSProject\CMSProject\CMSProject\bin\CMSProject.dll
+C:\Users\z125760760\Desktop\CMSProject\CMSProject\CMSProject\bin\CMSProject.pdb
+C:\Users\z125760760\Desktop\CMSProject\CMSProject\CMSProject\obj\Debug\CMSProject.csprojResolveAssemblyReference.cache
+C:\Users\z125760760\Desktop\CMSProject\CMSProject\CMSProject\obj\Debug\CMSProject.dll
+C:\Users\z125760760\Desktop\CMSProject\CMSProject\CMSProject\obj\Debug\CMSProject.pdb
+C:\Users\wanyuan\Desktop\test\软件工程\CMSProject\CMSProject\CMSProject\bin\CMSProject.dll
+C:\Users\wanyuan\Desktop\test\软件工程\CMSProject\CMSProject\CMSProject\bin\CMSProject.pdb
+C:\Users\wanyuan\Desktop\test\软件工程\CMSProject\CMSProject\CMSProject\obj\Debug\CMSProject.csprojResolveAssemblyReference.cache
+C:\Users\wanyuan\Desktop\test\软件工程\CMSProject\CMSProject\CMSProject\obj\Debug\CMSProject.dll
+C:\Users\wanyuan\Desktop\test\软件工程\CMSProject\CMSProject\CMSProject\obj\Debug\CMSProject.pdb

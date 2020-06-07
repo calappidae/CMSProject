@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="tchMaster.master.cs" Inherits="CMSProject.tchMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="laylu/css/layui.css"/>
+    <style type="text/css">
+        .auto-style1 {
+            color: #fff;
+            height: 21px;
+          
+        }
+        .yourbox{
+        position:absolute;
+           right:3px;
+           top  :38px;
+            width: 67px;
+            height: 25px;
+        }
+        .imporDateForm {
+            width: 400px;
+            height: 260px;
+            padding: 20px;
+            background:url(6.jpeg);
+            position: absolute;
+            left: 50%;top: 50%;
+            margin-left: -200px;
+            margin-top: -200px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .importDateIn {
+           
+           width: 65px;
+           height: 28px;
+           line-height: 28px;
+           position:relative;
+           left: 28.5%;
+           text-align: center;
+        }
+        .importDateQuery {
+           position: absolute;
+           left: 69.7%;
+           top: 24%;
+        }
+    </style>
+</head>
+<body>
+    <form id="Form1" runat="server" >
+    <div>
+           <div>
+             <table style="width:100%;">
+                <tr>
+                    <td style="text-align: center; font-family: '微软雅黑 Light'; font-size: 30px;" class="auto-style1 layui-bg-black"">课堂作业管理系统</td>
+                </tr>
+             </table>
+           </div> 
+           <div >
+                   <div class="layui-bg-green" style="float:left">
+                       <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal" Font-Size="16pt" >
+                            <Items >
+                                <asp:MenuItem Text="课群管理" Value="课群管理">
+                                    <asp:MenuItem NavigateUrl="~/ClassGroupCreate.aspx" Text="创建课群" Value="0"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/ClassGroupSelect.aspx" Text="查询课群" Value="1"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/ClassGroupUpdate.aspx" Text="修改课群" Value="2"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/ClassGroupDelete.aspx" Text="删除课群" Value="3"></asp:MenuItem>
+                                </asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                   </div>
+                   <div class="layui-bg-green" style="float:left">
+                           <asp:Menu ID="Menu1" runat="server" Font-Size="16pt" Orientation="Horizontal">
+                               <Items>
+                                   <asp:MenuItem Text="发布作业" Value="0">
+                                       <asp:MenuItem NavigateUrl="~/AssignJob.aspx" Text="发布作业" Value="0"></asp:MenuItem>
+                                   </asp:MenuItem>
+                               </Items>
+                           </asp:Menu>
+                  </div>
+                  <div class="layui-bg-green" style="float:left">
+                           <asp:Menu ID="Menu4" runat="server" Font-Size="16pt" Orientation="Horizontal">
+                               <Items>
+                                   <asp:MenuItem NavigateUrl="~/PublishAnswers.aspx" Text="发布答案" Value="0"></asp:MenuItem>
+                               </Items>
+                               
+                           </asp:Menu>
+                  </div>
+                <div class="layui-bg-green" style="float:left">
+                           <asp:Menu ID="Menu3" runat="server" Font-Size="16pt" Orientation="Horizontal">
+                               <Items>
+                                   <asp:MenuItem NavigateUrl="~/ScoreEnterResults.aspx" Text="评分评价" Value="0"></asp:MenuItem>
+                               </Items>
+                           </asp:Menu>
+                  </div>
+                 <div class="layui-bg-green" style="float:right">
+                     <asp:Button ID="Button1" class="layui-btn" runat="server" Text="退出" OnClick="Button1_Click" />
+                 </div>
+              </div>
+   </div>
+        <script src="laylu/layui.js"></script>
+          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+     
+    </form>
+</body>
+</html>
