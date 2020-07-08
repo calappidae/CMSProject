@@ -11,19 +11,10 @@ namespace CMSProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if ((string)Session["userRole"] != "0")
-            //    Response.Redirect("login.aspx");
-            //else
-            //    Label1.Text = "欢迎您：" + Session["userN"];
+            if ((string)Session["userRole"] != "1")
+                Response.Redirect("login.aspx");
+            else
+                Label1.Text = (string)Session["userN"];
         }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Session["userName"] = "";
-            Session["userN"] = "";
-            Session["userRole"] = "";
-            Response.Redirect("login.aspx");
-        }
-
     }
 }

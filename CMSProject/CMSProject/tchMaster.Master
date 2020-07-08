@@ -52,15 +52,15 @@
 </head>
 <body>
     <form id="Form1" runat="server" >
-    <div>
+    <div >
            <div>
              <table style="width:100%;">
                 <tr>
-                    <td style="text-align: center; font-family: '微软雅黑 Light'; font-size: 30px;" class="auto-style1 layui-bg-black"">课堂作业管理系统</td>
+                    <td style="text-align: center; font-family: '微软雅黑 Light'; font-size: 30px;" class="layui-bg-black"">课堂作业管理系统</td>
                 </tr>
              </table>
            </div> 
-           <div >
+           <div>
                    <div class="layui-bg-green" style="float:left">
                        <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal" Font-Size="16pt" >
                             <Items >
@@ -76,8 +76,8 @@
                    <div class="layui-bg-green" style="float:left">
                            <asp:Menu ID="Menu1" runat="server" Font-Size="16pt" Orientation="Horizontal">
                                <Items>
-                                   <asp:MenuItem Text="发布作业" Value="0">
-                                       <asp:MenuItem NavigateUrl="~/AssignJob.aspx" Text="发布作业" Value="0"></asp:MenuItem>
+                                   <asp:MenuItem NavigateUrl="~/AssignJob.aspx"  Text="发布作业" Value="0">
+                                       <asp:MenuItem NavigateUrl=" " Text=" " Value="9"></asp:MenuItem>
                                    </asp:MenuItem>
                                </Items>
                            </asp:Menu>
@@ -85,7 +85,9 @@
                   <div class="layui-bg-green" style="float:left">
                            <asp:Menu ID="Menu4" runat="server" Font-Size="16pt" Orientation="Horizontal">
                                <Items>
-                                   <asp:MenuItem NavigateUrl="~/PublishAnswers.aspx" Text="发布答案" Value="0"></asp:MenuItem>
+                                   <asp:MenuItem NavigateUrl="~/PublishAnswers.aspx" Text="发布答案" Value="0">
+                                       <asp:MenuItem NavigateUrl=" " Text="" Value="9"></asp:MenuItem>
+                                   </asp:MenuItem>
                                </Items>
                                
                            </asp:Menu>
@@ -98,7 +100,19 @@
                            </asp:Menu>
                   </div>
                  <div class="layui-bg-green" style="float:right">
-                     <asp:Button ID="Button1" class="layui-btn" runat="server" Text="退出" OnClick="Button1_Click" />
+                       <asp:Menu ID="Menu5" runat="server"  Font-Size="16pt" ForeColor="White">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/quit.aspx" Text="退出" Value="0"></asp:MenuItem>
+                        </Items>
+                       </asp:Menu>
+                 </div>
+                 <div class="layui-bg-green"  style="float:right;height:28px;">
+                      <div  style="margin-top:3px;">
+                          <asp:Label ID="Label1" runat="server"  ForeColor="Black" Font-Size="16px"></asp:Label>
+                      </div>
+                 </div>
+                 <div class="layui-bg-green"  style="float:right;height:28px;">
+                     <img class="layui-nav-img" alt="" style="height:28px" src="jiaoshitupian.ico" />
                  </div>
               </div>
    </div>

@@ -37,11 +37,11 @@
         }
     </style>
 </head>
-<body style="height: 321px;background:url(1.jpeg)" >
+<body style="height: 321px;background:url(image/loginbk.jpg)" >
     <br /><br /><br /><br /><br /><br /><br />
     <div>
     <form id="form1" runat="server" >
-       <table align="center" border="0" class="auto-style1" style="width:28%;background:url(6.jpeg);background-repeat:no-repeat;background-size:100% 100%;">
+       <table align="center" border="0" class="auto-style1" style="width:28%;background:url(image/1.jpg);background-repeat:no-repeat;background-size:100% 100%;">
             <tr>
                 <td class="auto-style7" style="text-align: center; font-size: 30px; font-family: 楷体; ">作业管理系统</td>
             </tr>

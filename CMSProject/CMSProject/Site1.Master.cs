@@ -14,7 +14,7 @@ namespace ruanjiangongchen
             if ((string)Session["userRole"] != "0")
                 Response.Redirect("login.aspx");
             else
-                Label1.Text = "欢迎您：" + Session["userN"];
+                Label1.Text = (string)Session["userN"];
         }
 
         protected void Menu6_MenuItemClick(object sender, MenuEventArgs e)

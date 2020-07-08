@@ -24,40 +24,61 @@
                    <div class="layui-bg-green" style="float:left">
                        <asp:Menu ID="Menu2" runat="server" Font-Size="16pt" >
                            <Items>
-                               <asp:MenuItem NavigateUrl="~/SelectAssignment.aspx" Text="查看作业" Value="0"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/SelectAssignment.aspx" Text="查看作业" Value="0">
+                                   <asp:MenuItem Text="" Value="9" NavigateUrl=" "></asp:MenuItem>
+                               </asp:MenuItem>
                            </Items>
                        </asp:Menu>
                    </div>
                    
-                   <div class="layui-bg-green" style="float:left;margin-left:20px">
+                   <div class="layui-bg-green" style="float:left;">
                        <asp:Menu ID="Menu3" runat="server" Font-Size="16pt" >
                            <Items>
-                               <asp:MenuItem NavigateUrl="~/UploadFile.aspx" Text="提交作业" Value="0"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/UploadFile.aspx" Text="提交作业" Value="0">
+                                   <asp:MenuItem Text="" Value="9" NavigateUrl=" "></asp:MenuItem>
+                               </asp:MenuItem>
                            </Items>
                        </asp:Menu>
                    </div>
-                 <div class="layui-bg-green" style="float:left;margin-left:20px">
+                 <div class="layui-bg-green" style="float:left;">
                        <asp:Menu ID="Menu5" runat="server" Font-Size="16pt" >
                            <Items>
-                               <asp:MenuItem NavigateUrl="~/CancelAssignment.aspx" Text="撤回作业" Value="0"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/CancelAssignment.aspx" Text="撤回作业" Value="0">
+                                   <asp:MenuItem Text="" Value="9" NavigateUrl=" "></asp:MenuItem>
+                               </asp:MenuItem>
                            </Items>
                        </asp:Menu>
                    </div>
-                  <div class="layui-bg-green" style="float:left;margin-left:20px">
+                  <div class="layui-bg-green" style="float:left;">
                        <asp:Menu ID="Menu4" runat="server" Font-Size="16pt" >
                            <Items>
-                               <asp:MenuItem NavigateUrl="~/ViewDownLoad.aspx" Text="下载作业" Value="0"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/ViewDownLoad.aspx" Text="下载作业" Value="0">
+                               </asp:MenuItem>
                            </Items>
                        </asp:Menu>
                    </div>
-                  <div class="layui-bg-green" style="float:right;margin-left:20px"">
-                     <asp:Button ID="Button1" class="layui-btn" runat="server" Text="退出" OnClick="Button1_Click" />
-                  </div>
+                    <div class="layui-bg-green" style="float:right;">
+                      
+                       <asp:Menu ID="Menu1" runat="server" ForeColor="White" Font-Size="16pt">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/quit.aspx" Text="退出" Value="0"></asp:MenuItem>
+                        </Items>
+                       </asp:Menu>
+                 </div>
+                 <div class="layui-bg-green"  style="float:right;height:28px;">
+                      <div  style="margin-top:3px;">
+                          <asp:Label ID="Label1" runat="server"  ForeColor="Black" Font-Size="16px"></asp:Label>
+                      </div>
+                 </div>
+                 <div class="layui-bg-green"  style="float:right;height:28px;">
+                     <img class="layui-nav-img" alt="" style="height:28px" src="xueshengtupian.ico" />
+                 </div>
               </div>
+    </div>
+
          <script src="laylu/layui.js"></script>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
-    </div>
     </form>
 </body>
 </html>

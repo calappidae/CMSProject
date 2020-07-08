@@ -66,6 +66,12 @@
     <Content Include="ClassGroupUpdate.aspx" />
     <Content Include="CourseScheddule.aspx" />
     <Content Include="course_arrange.aspx" />
+    <Content Include="image\1.jpg" />
+    <Content Include="image\2.jpg" />
+    <Content Include="image\importbk.jpg" />
+    <Content Include="image\login.jpg" />
+    <Content Include="image\loginbk.jpg" />
+    <Content Include="jiaoshitupian.ico" />
     <Content Include="ImportClass.aspx" />
     <Content Include="ImportCourse.aspx" />
     <Content Include="ImportStudent.aspx" />
@@ -183,6 +189,7 @@
     <Content Include="student.aspx" />
     <Content Include="teacher.aspx" />
     <Content Include="teaching.aspx" />
+    <Content Include="xueshengtupian.ico" />
     <Content Include="UploadFile.aspx" />
     <Content Include="ViewDownLoad.aspx" />
     <Content Include="Web.config">
@@ -190,6 +197,7 @@
     </Content>
     <Content Include="1.jpeg" />
     <Content Include="6.jpeg" />
+    <Content Include="jiaoxuemishutupian.ico" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrangeCourse.aspx.cs">

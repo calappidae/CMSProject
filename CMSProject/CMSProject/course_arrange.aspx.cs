@@ -25,7 +25,7 @@ namespace CMSProject
             string Constring = "server=.; database=CSMP; uid=sa; pwd= 123456";
             string tNo = Session["userName"] as string;
             //select classNo,className from Class where classNO in ( select Tc.classNo from TeacherCourse Tc,Teacher T where Tc.tchNo=T.tchNo and T.tchNo='B20000')
-            string str = "select * from Course where semester ='" + DropDownList1.SelectedValue + "'";
+            string str = "select distinct from Course where semester ='" + DropDownList1.SelectedValue + "'";
             SqlConnection conn = new SqlConnection(Constring);
             conn.Open();
             SqlCommand cmd = new SqlCommand(str, conn);

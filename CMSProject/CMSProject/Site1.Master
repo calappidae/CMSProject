@@ -19,7 +19,7 @@
             width: 400px;
             height: 260px;
             padding: 13px;
-            background:url(6.jpeg);
+            background:url(image/2.jpeg);
             position: absolute;
             left: 50%;
             top: 50%;
@@ -45,20 +45,19 @@
     </style>
     <link rel="stylesheet" href="laylu/css/layui.css"/>
 </head>
-<body style="background:url(6.jpeg)">
+<body>
      <form id="form1" runat="server">
-    <div>
-        
-        <table style="width:100%;">
-            <tr>
-                <td style="text-align: center;  font-family: 楷体; font-weight: 800; font-size: x-large;">作业课程管理系统&nbsp; <asp:Label ID="Label1" runat="server"></asp:Label>
-                </td>
-            </tr>
+     <div>
+        <div>
+             <table style="width:100%;text-align:center">
+              <tr>
+                 <td style="text-align: center; font-family: '微软雅黑 Light'; font-size: 30px;" class="layui-bg-black"">课堂作业管理系统</td>
+              </tr>
         </table>
-        <table style="width:100%;">
-            <tr>
-                <td class="auto-style1">
-                    <asp:Menu ID="Menu1" runat="server" BackColor="#42867C" Orientation="Horizontal" Font-Bold="True" ForeColor="White" Font-Size="14pt" >
+        </div>
+         <div>
+                 <div class="layui-bg-green" style="float:left">
+                     <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Font-Size="16pt" >
                         <Items>
                             <asp:MenuItem Selectable="False" Text="导入数据" Value="导入数据">
                                 <asp:MenuItem NavigateUrl="~/ImportStudent.aspx" Text="导入学生" Value="0"></asp:MenuItem>
@@ -68,9 +67,9 @@
                             </asp:MenuItem>
                         </Items>
                     </asp:Menu>
-                </td>
-                <td class="auto-style1">
-                    <asp:Menu ID="Menu2" runat="server" BackColor="#42867C" Orientation="Horizontal" Font-Bold="True" ForeColor="White" Font-Size="14pt">
+                 </div>
+                 <div class="layui-bg-green" style="float:left">
+                      <asp:Menu ID="Menu2" runat="server"  Orientation="Horizontal" Font-Size="16pt">
                         <Items>
                             <asp:MenuItem Selectable="False" Text="信息维护" Value="信息维护">
                                 <asp:MenuItem NavigateUrl="~/adminStudentDetails.aspx" Text="学生信息维护" Value="0"></asp:MenuItem>
@@ -80,44 +79,58 @@
                             </asp:MenuItem>
                         </Items>
                     </asp:Menu>
-                </td>
-                <td class="auto-style1" aria-orientation="vertical">
-                    <asp:Menu ID="Menu3" runat="server" BackColor="#42867C"  Font-Bold="True" ForeColor="White" Font-Size="14pt" Orientation="Horizontal">
+                 </div>
+                   
+                 <div class="layui-bg-green" style="float:left">
+                      <asp:Menu ID="Menu3" runat="server" Font-Size="16pt" Orientation="Horizontal">
                         <Items>
                             <asp:MenuItem Selectable="False" Text="查询信息" Value="查询信息">
                                 <asp:MenuItem Text="课程进度" Value="0" NavigateUrl="~/CourseScheddule.aspx"></asp:MenuItem>
                             </asp:MenuItem>
                         </Items>
                     </asp:Menu>
-                </td>
-                <td class="auto-style1">
-                    <asp:Menu ID="Menu6" runat="server" BackColor="#42867C"  Font-Bold="True" ForeColor="White" OnMenuItemClick="Menu6_MenuItemClick" Font-Size="14pt" >
+                 </div>
+                 <div class="layui-bg-green" style="float:left">
+                     <asp:Menu ID="Menu6" runat="server" OnMenuItemClick="Menu6_MenuItemClick"  Font-Size="16pt" >
                         <Items>
-                            <asp:MenuItem Text="安排课程" Value="0"></asp:MenuItem>
+                            <asp:MenuItem Text="安排课程" Value="0">
+                                <asp:MenuItem Text="" Value="9" NavigateUrl=" "></asp:MenuItem>
+                            </asp:MenuItem>
                         </Items>
                     </asp:Menu>
-                </td>
-                <td class="auto-style2">
-                    <asp:Menu ID="Menu4" runat="server" BackColor="#42867C"  Font-Bold="True" ForeColor="White" Font-Size="14pt" >
+                 </div>
+                 <div class="layui-bg-green" style="float:left">
+                     <asp:Menu ID="Menu4" runat="server"   Font-Size="16pt" >
                         <Items>
                             <asp:MenuItem NavigateUrl="~/modifyPwd.aspx" Text="修改密码" Value="0"></asp:MenuItem>
                         </Items>
-                    </asp:Menu>
-                </td>
-                <td class="auto-style1">
-                    <asp:Menu ID="Menu5" runat="server" BackColor="#42867C"  Font-Bold="True" ForeColor="White" Font-Size="14pt">
+                     </asp:Menu>
+                 </div>
+                
+                 <div class="layui-bg-green" style="float:right;">
+                      
+                       <asp:Menu ID="Menu5" runat="server" ForeColor="White" Font-Size="16pt">
                         <Items>
-                            <asp:MenuItem NavigateUrl="~/quit.aspx" Text="退出系统" Value="0"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/quit.aspx" Text="退出" Value="0"></asp:MenuItem>
                         </Items>
-                    </asp:Menu>
-                </td>
-            </tr>
-            </table>
+                       </asp:Menu>
+                 </div>
+                 <div class="layui-bg-green"  style="float:right;height:28px;">
+                      <div  style="margin-top:3px;">
+                          <asp:Label ID="Label1" runat="server"  ForeColor="Black" Font-Size="16px"></asp:Label>
+                      </div>
+                 </div>
+                 <div class="layui-bg-green"  style="float:right;height:28px;">
+                     <img class="layui-nav-img" alt="" style="height:28px" src="jiaoxuemishutupian.ico" />
+                 </div>
+                
+
+        </div>
+     </div>
          <script src="laylu/layui.js"></script>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
-    </div>
     </form>
 </body>
 </html>
